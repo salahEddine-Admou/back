@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate of Attendance</title>
+
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .certificate {
+    border: 2px solid black;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("https://res.cloudinary.com/dwiwbp0yv/image/upload/v1716893841/s0kakmuhcuftnixfnvtr.png") no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    color: #ff4500;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  h3 {
+    margin-top: 20px;
+    color: #555;
+  }
+
+  h4 {
+    margin-bottom: 20px;
+    color: darkblue;
+  }
+
+  .signatory {
+    margin-top: 40px;
+    font-style: italic;
+  }
+
+  .website {
+    margin-top: 20px;
+    color: #666;
+    font-size: smaller;
+  }
+
+</style>
+</head>
+<body>
+  <div class="certificate">
+    <h1>Certificate of Attendance</h1>
+    <p>This is to certify that</p>
+    <h2>{{username}}</h2> <!-- Placeholder for username -->
+    <p>has actively participated in the training organized by</p>
+    <h3>Orange Digital Center Sidi Mâarouf</h3>
+    <p><strong>Date of Issue: {{date}}</strong> on</p> <!-- Placeholder for date -->
+    <h4>{{courseName}}</h4> <!-- Placeholder for course name -->
+    <p class="signatory">Mme. Nadia Mrabi<br>Senior Manager RSE et ODC</p>
+    <p class="website">www.orangedigitalcenters.com</p>
+  </div>
+</body>
+</html>

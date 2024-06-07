@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate of Attendance</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: white;
+        padding: 40px;
+        margin: 20px;
+        border: 2px solid #ccc;
+        max-width: 800px;
+        margin: auto;
+    }
+    .certificate {
+        text-align: center;
+        border: 5px solid #0077CC;
+        padding: 20px;
+    }
+    .orange-logo {
+        width: 100px;
+    }
+    h1 {
+        color: #E65100;
+    }
+    .content {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .signature {
+        text-align: right;
+        margin-top: 40px;
+    }
+    .signature img {
+        width: 100px; /* Signature image width */
+    }
+</style>
+</head>
+<body>
+<div class="certificate">
+    <img class="orange-logo" src="orange-logo.jpg" alt="Orange Logo">
+    <h1>Certificate of Attendance</h1>
+    <p class="content">This is to certify that</p>
+    <h2>{{firstName}} {{lastName}}</h2>
+    <p class="content">has actively participated in the training organized by</p>
+    <h3>Orange Digital Center Sidi Maarouf</h3>
+    <p class="content">Date of Issue: <strong>{{issueDate}}</strong> on</p>
+    <h3>{{courseName}}</h3>
+    <div class="signature">
+        <p>Mme. Nadia Mrabi<br>
+        Senior Manager RSE et ODC</p>
+        <img src="signature.jpg" alt="Signature">
+    </div>
+</div>
+</body>
+</html>
